@@ -300,7 +300,15 @@
   <body>
     <h3>Hello</h3>
   </body>
-  <button class="button-9" click()="add(member)">A Button</button>
+  <input
+  #restarauntInput 
+  (input)="onInput(restarauntInput.value)" 
+  type="text" 
+  placeholder="Find a restaraunt" />
+  <div>
+  <button class="button-9" (click)="addMember()">Submit</button>
+  <button class="button-9" (click)="resetMembers()">Reset</button>
+</div>
 </div>
 
 

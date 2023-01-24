@@ -7,5 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'App1';
+  resToAdd = '';
   members: string[]=[];
+
+  addMember(){
+    this.members.push(this.resToAdd);
+    console.log(this.members);
+  }
+  onInput(resName: string){
+    this.resToAdd = resName;
+    console.log(resName);
+  }
+  resetMembers(){
+    this.members = [];
+    console.log(this.members);
+    console.log("Lol");
+  }
 }
+
