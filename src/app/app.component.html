@@ -296,18 +296,21 @@
 </style>
 
 <div>
+  
+  <h1>Location Select</h1>
+
+  <div class="card-container">
   <ul class="list">
-    <li *ngFor="let member of members"></li>
+    <h3 class="card" *ngFor="let member of members">{{member}} loves u </h3>
   </ul>
-  <h1>Team Generate</h1>
-  <body>
-    <h3>Hello</h3>
-  </body>
+  </div>
+
+
   <input
   #restarauntInput 
   (input)="onInput(restarauntInput.value)" 
   type="text" 
-  placeholder="Find a restaraunt" />
+  placeholder="Find a restaurant" />
   <div>
   <button class="button-9" (click)="addMember()">Submit</button>
   <button class="button-9" (click)="resetMembers()">Reset</button>
